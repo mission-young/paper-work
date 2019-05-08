@@ -197,13 +197,38 @@ $\beta$叠加效应部分的描述
 \end{enumerate}
 
 \subsubsection{Energy calibration of the implantation detector}
-The $\beta$-particle energy deposit leads to a shift in energy of the Gaussian-like part of the proton peaks. This effect could be reproduced by means of a GEANT simulation, as shown in the lower part of fig.3 for a representative $\beta$-delayed proton peak. It could also be shown that the energy shift is roughly independent of the proton and $\beta$-particle energies but linearly dependent on the implantation depth of the ions, that is to say, on the distance the $\beta$-particles travel in the detector \textit{E}4 before leaving it to enter the coincidence detector \textit{E}5. The energy calibrations of the detector \textit{E}4 for the settings on $^{21}\textnormal{Mg}$,$^{25}\textnormal{Si}$ and $^{26}\textnormal{P}$ were therefore assumed to differ only by a shift proportional to the implantation depths of the ions.
+$\beta$叠加效应正比于注入深度
+\begin{enumerate}
+    \item The $\beta$-particle energy deposit leads to a shift in energy of the Gaussian-like part of the proton peaks. This effect could be reproduced by means of a GEANT simulation, as shown in the lower part of fig.3 for a representative $\beta$-delayed proton peak. It could also be shown that the energy shift is roughly independent of the proton and $\beta$-particle energies but linearly dependent on the implantation depth of the ions, that is to say, on the distance the $\beta$-particles travel in the detector \textit{E}4 before leaving it to enter the coincidence detector \textit{E}5. The energy calibrations of the detector \textit{E}4 for the settings on $^{21}\textnormal{Mg}$,$^{25}\textnormal{Si}$ and $^{26}\textnormal{P}$ were therefore assumed to differ only by a shift proportional to the implantation depths of the ions.
+\end{enumerate}
 
-The calibration parameters for the settings were deduced from the identification of the major proton groups expected at 1315(9),1893(2),2037(4),2589(9),4908(3) and 6542(3) keV for the decay of $^{21}\textnormal{Mg}$ and at 402(1),1925(3),2169(7),
+使用$^{25}\textnormal{Si}$的一系列质子峰来进行刻度。
+\begin{enumerate}
+    \item The calibration parameters for the settings were deduced from the identification of the major proton groups expected at 1315(9),1893(2),2037(4),2589(9),4908(3) and 6542(3) keV for the decay of $^{21}\textnormal{Mg}$ and at 402(1),1925(3),2169(7),2312(4),3472(10),4261(2) and 5630(2) keV for the decay of $^{25}\textnormal{Si}$. The proton group energies were recalculated using the excitation energies of the proton-emitting states and the proton separation energies reported in a compilation.
+\end{enumerate}
 
 \subsubsection{Proton detection efficiency}
+描述影响探测效率的因素。以及Geant4模拟的效果。
+
+\begin{enumerate}
+    \item Since ions were implanted at the end of the detector \textit{E}4, the proton detection efficiency $\varepsilon_{p}$ is very sensitive to the implantation profile of the emitting ion and to the proton energy. The detection efficiency for protons between 0.5 and 10 MeV was computed by means of GEATN4 simulations. Following experimental observations, implantation profiles were approximated by Gaussian distributions in the beam direction (with a standard deviation of 20 $\mu$m) and with a two-dimensional square-shaped function in the orthogonal plane. 
+    
+    Results are shown in fig.4. An uncertainty on the detection efficiency of less than 6\% was obtained. This uncertainty was determined by varying the implantation depth by $\pm$10 $\mu$m, which is roughly the width of the implantation distribution.
+\end{enumerate}
+
 \subsubsection{Absolute intensities of the observed proton groups}
+The absolute intensity $I_{p}^{i}$ of a given proton group \textit{i} was derived from the following relation:
+\begin{equation}
+    I_{p}^{i}=\frac{S_{c_{p}^{i}}}{K_{c_{p}} \cdot N_{\textnormal{impl}}\cdot \varepsilon_{p}^{i}}
+\end{equation}
+where $S_{c_{p}^{i}}$ is the area of the proton peak observed in the coincidence spectrum (\textit{E}5>0),$K_{c_{p}}$ the normalization factor to be taken into account due to the coincidence condition, $N_{\textnormal{impl}}$ the number of ions implanted in \textit{E}4 and $\varepsilon_{p}^{i}$ the proton detection efficiency for a given proton energy.
+
+The extraction of the factor $K_{c_{p}}$ is illustrated in fig.5 for the setting on $^{25}\textnormal{Si}$. Several proton peaks were fitted in the high-energy part of the \textit{E}4 energy spectrum, where the $\beta$ background is low enough and where proton peaks are well separated. The $K_{c_{p}}$ coefficients were deduced from the average ratio of the areas of the $\beta$-delayed proton peaks obtained with and without coincidence condition. For the coincidence spectrum, peaks were fitted by means of Gaussian distributions on a linear background (see inserts of fig.5) leading to the $S_{c_{p}^{i}}$ values. For the unconditioned energy spectrum, fit fucntios convoluting a Gaussian distribution and an exponential tail on top of an exponential background were used. For each ion of interest, the parameters of the exponential tail were fixed regardless of the proton peak energies. The $K_{c_{p}}$ coefficients obtained were about 13\%, with an uncertainty of 1 to 2\%.
+
+
+
 \subsection{$\gamma$-ray spectroscopy}
+As shown in fig.2, a segmented germanium clover detector was placed at 0 degree, a few centimeters away from the silicon stack. To reduce the dead time of the acquisition system, the $\gamma$-ray signals were not used to trigger the data acquisition. As a consequence, the probability to observe a $\gamma$
 \section{Experimental results}
 \subsection{$\beta$-decay study of $^{25}\textnormal{Si}$}
 \subsubsection{$\beta$-decay proton emission}
