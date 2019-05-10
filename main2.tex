@@ -18,9 +18,10 @@
 %  3)  latex apssamp.tex
 %  4)  latex apssamp.tex
 %
+
 \documentclass[%
  reprint,
- superscriptaddress,
+%superscriptaddress,
 %groupedaddress,
 %unsortedaddress,
 %runinaddress,
@@ -40,9 +41,11 @@
 %floatfix,
 ]{revtex4-1}
 \usepackage{ctex}
+
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
+
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -59,36 +62,13 @@
 
 \preprint{APS/123-QED}
 
-\title{Manuscript Title}% Force line breaks with \\
-\thanks{A footnote to the article title}%
+\title{$^{22}\textnormal{Al}$缓发质子衰变}% Force line breaks with \\
+\thanks{题目脚注？？？？}%
 
-\author{Ann Author 中文测试}
- \altaffiliation[Also at ]{Physics Department, XYZ University.}%Lines break automatically or can be forced with \\
-\author{Second Author}%
- \email{Second.Author@institution.edu}
-\affiliation{%
- Authors' institution and/or address\\
- This line break forced with \textbackslash\textbackslash
-}%
+% \input{author.tex}
 
-\collaboration{MUSO Collaboration}%\noaffiliation
 
-\author{Charlie Author}
- \homepage{http://www.Second.institution.edu/~Charlie.Author}
-\affiliation{
- Second institution and/or address\\
- This line break forced% with \\
-}%
-\affiliation{
- Third institution, the second for Charlie Author
-}%
-\author{Delta Author}
-\affiliation{%
- Authors' institution and/or address\\
- This line break forced with \textbackslash\textbackslash
-}%
-
-\collaboration{CLEO Collaboration}%\noaffiliation
+% \collaboration{RIBLL Collaboration}%\noaffiliation
 
 \date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
